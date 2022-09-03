@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript String Functions</title>
+</head>
+<body>
+    <div>
+        <h3>JavaScript String Fuction </h3>
+    </div>
+    <script>
+
+        var str = "This is a string";
+        var str1 = 'and This is an another string';
+        console.log(str + " " +str1)
+
+        var str2 = ` ${str} "Example".`;
+        console.log(str)
+        console.log(str2)
+
+        var length = str.length;
+        console.log(length)
+
+        var position = str.indexOf("is");
+        console.log(position)
+
+        position = str.lastIndexOf("is");
+        console.log(position)
+
+        var slice = str1.slice(0,5);  // we can use -ve numbers also
+        console.log(slice)
+
+        slice = str1.substring(0,5);  // we cannot use -ve numbers
+        console.log(slice)
+
+        var replace = str.replace("string" , "Rishi");
+        console.log(str)
+        console.log(replace)
+
+        console.log(str.toUpperCase())
+        console.log(str.toLowerCase())
+
+        var str_trim = '        Trim        ' ;
+        console.log(str_trim.trim())
+        console.log(str_trim.trimLeft())
+        console.log(str_trim.trimRight())
+
+        var char = str.charAt(5);
+        console.log(char)
+
+        
+        console.log(str[5])
+
+        var char1 = str.charCodeAt(5);
+        console.log(char1)
+
+    </script>
+</body>
+</html>
