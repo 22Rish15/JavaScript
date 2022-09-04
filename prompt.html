@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PopUp Prompt</title>
+</head>
+<body>
+<button onclick="prpt()">Sum of num1 and num2</button>
+
+    <script>
+
+        /* let name = prompt("What is your name ?", "Guest");
+        document.write("Good morning! " + name); */
+
+        function prpt(){
+            let num1 = parseInt(prompt("Enter the value of num1",00));
+            let num2 = parseInt(prompt("Enter the value of num2",00));
+            let add = num1 + num2;
+            document.write("Sum of "+ num1+" and "+num2+ " : " + add);
+        }
+
+    </script>
+</body>
+</html>
