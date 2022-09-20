@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Loop</title>
+</head>
+<body>
+    <div class="container">
+        For Loop
+    </div>
+    <script>
+        let friends = ["Rishi", "Rajesh", "Varsha", "Kajal"]
+        let i = 0
+        for(i; i < friends.length; i++){
+            console.log("hELLO",friends[i]+"!");
+        }
+
+        // forEach - modern method
+        let car = ["Audi", "BMW", "Rolls Royce", "Jaguar"]
+        car.forEach(function f(ele){
+            console.log(ele);
+        })
+
+        // for of
+        let lan = ["HTML", "CSS", "JavaScript"]
+        for(ele of lan){
+            console.log(ele);
+        }
+
+        // for in
+        let employee = {
+            name : "Rishi",
+            salary : "6.5L",
+            designation : "Web developer"
+        }
+        for (key in employee){
+            console.log(`The ${key} of employee is ${employee[key]}. `);
+            // console.log("The " +key ,"of employee is " +employee[key] );
+        }
+
+    </script>
+    
+</body>
+</html>
