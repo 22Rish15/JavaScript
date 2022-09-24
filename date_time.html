@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date and Time</title>
+</head>
+<body>
+    <div class="container">
+        <h3>Date and Time</h3>
+    </div>
+    <script>
+        let now = new Date()
+        console.log(now)
+
+        let dt = new Date(1000)
+        console.log(dt)
+
+        let newDate = new Date("2023-06-15")
+        console.log(newDate)
+
+        let date = new Date(2025,06,15,12,00,0)
+        console.log(date)
+
+        let yr = date.getFullYear()
+        console.log("Year is "+ yr)
+
+        let mon = date.getMonth()
+        console.log("Month is "+ mon)
+
+        let dat = date.getDate()
+        console.log("Date is "+ dat)
+
+        let hr = date.getHours()
+        console.log("Hour is "+ hr)
+
+        date.setDate(25)
+        console.log(date)
+    </script>
+</body>
+</html>

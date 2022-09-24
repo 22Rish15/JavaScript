@@ -6,13 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>setInterval and clearInterval</title>
 </head>
+<style>
+    div{
+        background-color: blanchedalmond;
+        font-size: 20px;
+        border: 2px solid greenyellow;
+        padding: 15px;
+    }
+
+    #time{
+        font-weight: bold;
+    }
+</style>
 <body>
     <div class="container">
         Time now is <span id="time"></span>
     </div>
     <script>
         function displayTime(){
-            time = new Date();
+                let time = new Date();
         //   console.log(time);
             document.getElementById('time').innerHTML = time;
         }
