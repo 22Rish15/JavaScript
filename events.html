@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Events </title>
+</head>
+<style>
+    #btn{
+        padding: 8px 10px;
+        background-color: rgb(165, 87, 87);
+        color: white;
+        border: 2px solid black;
+        font-weight: bold;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+</style>
+<body>
+    <div class="container">
+        <h2> Events by css </h2>
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti vero magni iusto laboriosam fuga 
+            beatae odio tempora iure incidunt at, maxime reprehenderit sunt nisi, exercitationem suscipit commodi quas? 
+            Impedit voluptatibus recusandae in quos doloribus et eius voluptatem perferendis temporibus a? Lorem ipsum 
+            dolor sit amet consectetur adipisicing elit. Id, commodi harum! Explicabo illo culpa asperiores illum impedit 
+            expedita dolorum quis.</p>
+    </div>
+    <button id="btn" onclick="toggleHide()">Show / Hide</button>
+
+    <script>
+        function toggleHide(){
+            let para = document.getElementById('para')
+
+            if(para.style.display != 'none'){
+                para.style.display = 'none'
+            }
+            else{
+                para.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
