@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Object</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Math Object</h2>
+    </div>
+    <script>
+        // Prinitng the math objects
+        let m = Math;
+        console.log(m)
+
+        // Prinitng the constants from math objects
+        console.log("The value of Math.E is "+ Math.E);
+        console.log("The value of Math.PI is "+ Math.PI);
+        console.log("The value of Math.LOG2E is "+ Math.LOG2E);
+        console.log("The value of Math.SQRT2 is "+ Math.SQRT2);
+        console.log("The value of Math.LN2 is "+ Math.LN2);
+        console.log("The value of Math.SQRT1_2 is "+ Math.SQRT1_2);
+
+        // Prinitng the Functions from math objects
+        let a = 51.51515
+        let b = 05
+        console.log("The value of a and b is ",a,b)
+        console.log("The value of a and b rounded is ",Math.round(a),Math.round(b))
+
+        console.log("3 raised to the power of 2 is ",Math.pow(3,2))
+        console.log("2 raised to the power of 10 is ",Math.pow(2,10))
+
+        console.log("Square root of 36 is ",Math.sqrt(36))
+        console.log("Square root of 121 is ",Math.sqrt(121))
+
+        // Ceil and Floor
+        console.log("5.89 rounded up by Ceil is "+Math.ceil(5.89))
+        console.log("5.89 rounded down by Floor is "+Math.floor(5.89))
+
+        // Absolute value
+        console.log("Absolute value of 5.66 is "+Math.abs(5.66))
+        console.log("Absolute value of -5.66 is "+Math.abs(-5.66))
+
+        // Trignometric finction
+        console.log("The value of sin(pi/2) is "+ Math.sin(Math.PI/2))
+        console.log("The value of tan(pi/2) is "+ Math.tan(Math.PI/2))
+        console.log("The value of cos(pi/2) is "+ Math.cos(Math.PI/2))
+
+        // Min and Max
+        console.log("Minimum value between 4, 5 and 6 is "+Math.min(4,5,6))
+        console.log("Maximum value between 10, 15 and 26 is "+Math.max(10,15,26))
+
+        // Generating Random number
+        console.log("The random number is "+ Math.random())
+        console.log("The random number between 0 - 50 is "+ Math.random()*50)
+        console.log("The random number between 10 - 50 is "+ (10 + (50-10)*Math.random()))
+    </script>
+</body>
+</html>

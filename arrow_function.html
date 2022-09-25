@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow function</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Arrow function</h2>
+    </div>
+    <script>
+
+        // We can also define function in another form (Short form) called Arrow Function.
+        let sum = (a,b)=>{
+            return a+b
+        }
+        console.log(sum(500,51));
+
+        let diff = (a,b) => a-b
+        console.log(diff(5,4));
+
+        let obj = {
+            names: ["Rishi" , "Mohan" , "Sonal"],
+            greeting : "Good Morning🎇",
+            speak(){
+                this.names.forEach((student) => {
+                    console.log("Hello " + student + " " + this.greeting);
+                });
+            }
+        }
+        obj.speak()
+        
+    </script>
+</body>
+</html>
