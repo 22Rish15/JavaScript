@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <style>
+        form {
+            margin: 0 auto;
+            width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">REGISTRATION FORM</h1>
+    <form name="RegForm" onsubmit="return validateForm()" method="" action="">
+    <pre>
+        First Name: <input type="text" minlength="6" size="50" name="FName"><br>
+        Last Name:  <input type="text" size="50" name="Lname"><br>
+        E-mail:     <input type="text" size="50" name="EMail"><br> 
+        Password:   <input type="password" minlength="6" size="50" name="Password"><br>
+        Phone No.:  <input type="text" maxlength="10" size="50" name="Telephone"><br>
+        Address:    <input type="text" size="50" name="Address"><br>
+                                     <input type="submit" value="Send" name="Submit">
+    </pre>
+    </form>
+    <script>
+        function validateForm() {
+            var name = document.RegForm.FName.value;
+            var lname = document.RegForm.Lname.value;
+            var email = document.RegForm.EMail.value;
+            var phone = document.RegForm.Telephone.value;
+            var password = document.RegForm.Password.value;
+            var address = document.RegForm.Address.value;
+
+            var uname = /^[A-Za-z]+$/;
+            var uemail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/; 
+            var uphone=/^\d{10}$/;                                     
+                                         
+    
+            if (name == "" || uname.test(name)) {
+                alert("Please enter your First Name properly.");
+                name.focus();
+                return false;
+            }
+    
+            if (lname == "") {
+                alert("Please enter your Last Name.");
+                lname.focus();
+                return false;
+            }
+                    
+            if (email == "" || !uemail.test(email)) {
+                alert("Please enter a valid e-mail address.");
+                email.focus();
+                return false;
+            }
+                    
+            if (password == "") {
+                alert("Please enter your password");
+                password.focus();
+                return false;
+            }
+
+            if (phone == "" || !uphone.test(phone)) {
+                alert("Please enter valid phone number.");
+                phone.focus();
+                return false;
+            }
+
+            if (address == "") {
+                alert("Please enter your Address.");
+                address.focus();
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+</html>
