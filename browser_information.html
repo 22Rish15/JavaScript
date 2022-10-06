@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get browser details through JavaScript</title>
+</head>
+<body>
+    <div id="information"></div>
+    <script>
+        txt = "<p>Browser CodeName: " + navigator.appCodeName + "</p>";
+        txt+= "<p>Browser Name: " + navigator.appName + "</p>";
+        txt+= "<p>Browser Version: " + navigator.appVersion + "</p>";
+        txt+= "<p>Browser's Language: " + navigator.language + "</p>"
+        document.getElementById("information").innerHTML=txt;
+    </script>
+</body>
+</html>
